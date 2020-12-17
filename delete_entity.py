@@ -9,7 +9,7 @@ def main():
     start = datetime.now()
 
     print("CLEANUP entity {}".format(entity))
-    client = datastore.Client(project='PROJECT-ID')
+    client = datastore.Client(project='a2a-crmo-lab')
     query = client.query(kind=entity)
     query.keys_only()
     results = list(query.fetch())

@@ -13,7 +13,7 @@ def main():
     print("CREATING {} task".format(total))
     start = datetime.now()
 
-    client = datastore.Client(project='PROJECT-ID')
+    client = datastore.Client(project='a2a-crmo-lab')
 
     tasks = []
     for i in range(total):
